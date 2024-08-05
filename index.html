@@ -4,31 +4,31 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
-	<title>Поиск авто</title>
+	<title>Поиск байков и мото</title>
 </head>
 <body>
 	<div class="content">
-        	<h1>Поиск авто</h1>
-        	<p>Пояснение к сетке 4 на 3:</p>
+        	<h1>Поиск байков и мото</h1>
+        	<p>по фильтрам:</p>
         	<div class="grid">
             	<div class="grid-item">
 			Категории
 			<select class="select" id="category">
 			  <option disabled>Категория</option>
 			  <option value="ALL">ALL</option>
-			  <option value="Econom">Econom</option>
-			  <option value="Comfort">Comfort</option>
-			  <option value="Jeep">Jeep</option>
+			  <option value="Small">Small</option>
+			  <option value="Big">Big</option>
+			  <option value="Moto">Moto</option>
 			</select>
 		</div>
             	<div class="grid-item">
-			Кол-во мест
+			Объем двигателя(куб.см)
 			<select class="select" id="passengers">
-			  <option disabled>Мест</option>
+			  <option disabled>Объем</option>
 			  <option value="ALL">ALL</option>
-			  <option value="2">2</option>
-			  <option value="5">5</option>
-			  <option value="7">7</option>
+			  <option value="<150">до 150</option>
+			  <option value="150-300">150-300</option>
+			  <option value="300>">от 300</option>
 			</select>
 		</div>
             	<div class="grid-item">
@@ -36,9 +36,9 @@
 			<select class="select" id="count">
 			  <option disabled>Стоимость(бат)</option>
 			  <option value="ALL">ALL</option>
-			  <option value="<15">до 15к</option>
-			  <option value="15<25">15к - 25к</option>
-			  <option value="25>">больше 25к</option>
+			  <option value="до 6k">до 6к</option>
+			  <option value="6k<10k">6к-10к</option>
+			  <option value="от 10k>">от 10k</option>
 			</select>
 		</div>
         </div>
